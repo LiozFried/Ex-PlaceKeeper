@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Home Page</title>
+</head>
+
+<body onload="onIndexInit()">
+    <header>
+        <h1>Place Keeper</h1>
+        <nav class="header-links">
+            <a href="index.html">Home</a>
+            <a href="user-settings.html">User Settings and Preferences</a>
+            <a href="places.html">Places and Map</a>
+        </nav>
+    </header>
+
+    <main>
+        <img class="world-img" src="IMG/Winkel_triple_projection_SW.jpg">
+        <section class="main-part-html">
+            <h1>Welcome to Place Keeper</h1>
+            <h2>This app can help you to find your best places</h2>
+            <nav class="links">
+                <a href="user-settings.html">User Settings and Preferences</a>
+                <a href="places.html">Places and Map</a>
+            </nav>
+        </section>
+        <section class="birth-date-and-time">
+            <p class="birth-date"></p>
+            <p class="birth-time"></p>
+        </section>
+    </main>
+    <script src="JS/Services/utils.service.js"></script>
+    <script src="JS/Services/user.service.js"></script>
+    <script src="JS/Controllers/index.controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>User Settings</title>
+</head>
+
+<body>
+    <header>
+        <h1>Place Keeper</h1>
+        <nav class="header-links">
+            <a href="index.html">Home</a>
+            <a href="user-settings.html">User Settings and Preferences</a>
+            <a href="places.html">Places and Map</a>
+        </nav>
+    </header>
+
+    <main class="settings-form">
+        <h2>User Settings & Preferences</h2>
+
+        <form onsubmit="onRegister(event)">
+            <label for="email">E-Mail:</label>
+            <input required placeholder="exmpl@places.net" type="email" name="email" id="email" />
+
+            <label for="age"> Age: <span class="range-age">25</span></label>
+            <input type="range" name="age" id="age" min="14" max="120" value="25" oninput="onChooseAge(this.value)" />
+
+            <label for="bgc">Background Color:</label>
+            <input type="color" id="bgc" name="bgc" value="#ffffff" />
+
+            <label for="txtColor">Text Color:</label>
+            <input type="color" name="txtColor" id="txtColor" value="#000000" />
+
+            <label for="birthDate">BirthDay:</label>
+            <input type="date" name="birthDate" id="birthDate" />
+
+            <label for="birthTime">Birth TIme:</label>
+            <input type="time" name="birthTime" id="birthTime">
+
+            <button>👉🏽 Register 👈🏽</button>
+        </form>
+    </main>
+
+    <script src="JS/Services/utils.service.js"></script>
+    <script src="JS/Services/user.service.js"></script>
+    <script src="JS/Controllers/user-settings.controller.js"></script>
+</body>
+
+</html>
