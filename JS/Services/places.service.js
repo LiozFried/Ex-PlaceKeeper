@@ -42,7 +42,7 @@ function _createPlaces() {
     if (!gPlaces || !gPlaces.length) {
         var places = []
         for (let i = 0; i < 2; i++) {
-            places.push(_createPlace('Place ' + i, 3.688535 - + i / 100, 40.453209 + i / 100, 13))
+            places.push(_createPlace('Place ' + i, 40.453231 + i / 100, -3.686740 + i / 100, 13))
         }
         gPlaces = places
         _savePlacesToStorage()
