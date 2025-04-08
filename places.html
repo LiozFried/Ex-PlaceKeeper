@@ -27,6 +27,19 @@
             <ul class="places-list"></ul>
         </section>
     </main>
+
+    <div class="modal">
+        <form onsubmit="onAddPlace(event)">
+            <label for="placeName">Enter Name</label>
+            <input type="text" name="placeName" id="placeName" placeholder="Place Name" />
+            <button>Add</button>
+        </form>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTpu93yAcCfH729QdFwVy0TCFuM9HZdZ0"></script>
+    <script src="JS/Services/utils.service.js"></script>
+    <script src="JS/Services/places.service.js"></script>
+    <script src="JS/Controllers/places.controller.js"></script>
 </body>
 
 </html>

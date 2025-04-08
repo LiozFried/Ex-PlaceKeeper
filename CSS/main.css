@@ -67,3 +67,9 @@ a {
     text-align: start;
     margin-block-start: 2.5em;
 }
+
+.map-container {
+    height: 200px;
+    width: 100%;
+    margin-block-end: 20px;
+}
